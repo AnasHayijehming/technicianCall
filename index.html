@@ -32,7 +32,7 @@
                     <div class="card-body">
                         <h5 class="card-title">ซ่อม</h5>
                         <p class="card-text">เลือกเมนูสำหรับการซ่อม</p>
-                        <a data-toggle="collapse" href="#menu-repair-submenu" class="btn btn-primary">แสดงเมนูย่อย</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menu-repair-modal">แสดงเมนูย่อย</button>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <h5 class="card-title">ติดตั้ง</h5>
                         <p class="card-text">เลือกเมนูสำหรับการติดตั้ง</p>
-                        <a data-toggle="collapse" href="#menu-install-submenu" class="btn btn-primary">แสดงเมนูย่อย</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menu-install-modal">แสดงเมนูย่อย</button>
                     </div>
                 </div>
             </div>
@@ -50,47 +50,151 @@
                     <div class="card-body">
                         <h5 class="card-title">ต่อเติม</h5>
                         <p class="card-text">เลือกเมนูสำหรับการต่อเติม</p>
-                        <a data-toggle="collapse" href="#menu-renovate-submenu" class="btn btn-primary">แสดงเมนูย่อย</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#menu-renovate-modal">แสดงเมนูย่อย</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="collapse" id="menu-repair-submenu">
-                    <div class="card card-body">
-                        <ul>
-                            <li>ไฟฟ้า</li>
-                            <li>ประปา</li>
-                            <li>ผนัง</li>
-                            <li>ฝาเพดาน</li>
-                            <li>หลังค่ากันสาด</li>
-                        </ul>
+    <!-- โมเดิร์นเมนูย่อย - ซ่อม -->
+    <div class="modal fade" id="menu-repair-modal" tabindex="-1" role="dialog" aria-labelledby="menu-repair-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menu-repair-modal-label">เมนูย่อย - ซ่อม</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ไฟฟ้า</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ประปา</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ผนัง ฝา เพดาน</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">หลังคา กันสาด</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="collapse" id="menu-install-submenu">
-                    <div class="card card-body">
-                        <ul>
-                            <li>ไฟฟ้า</li>
-                            <li>ประปา</li>
-                            <li>ผนัง</li>
-                            <li>ฝาเพดาน</li>
-                            <li>หลังค่ากันสาด</li>
-                        </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- โมเดิร์นเมนูย่อย - ติดตั้ง -->
+    <div class="modal fade" id="menu-install-modal" tabindex="-1" role="dialog" aria-labelledby="menu-install-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menu-install-modal-label">เมนูย่อย - ติดตั้ง</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ไฟฟ้า</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ประปา</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ผนัง ฝา เพดาน</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">หลังคา กันสาด</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="collapse" id="menu-renovate-submenu">
-                    <div class="card card-body">
-                        <ul>
-                            <li>ไฟฟ้า</li>
-                            <li>ประปา</li>
-                            <li>ผนัง</li>
-                            <li>ฝาเพดาน</li>
-                            <li>หลังค่ากันสาด</li>
-                        </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- โมเดิร์นเมนูย่อย - ต่อเติม -->
+    <div class="modal fade" id="menu-renovate-modal" tabindex="-1" role="dialog" aria-labelledby="menu-renovate-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="menu-renovate-modal-label">เมนูย่อย - ต่อเติม</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ไฟฟ้า</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ประปา</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">ผนัง ฝา เพดาน</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body p-4 text-center">
+                                    <h5 class="card-title">หลังคา กันสาด</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
