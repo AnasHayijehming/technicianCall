@@ -4,36 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แอปพลิเคชันช่าง</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        main {
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -46,24 +17,41 @@
             <li><a href="#menu-renovate">ต่อเติม</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="menu-repair">
-            <h2>เมนูซ่อม</h2>
-            <ul>
-                <li><a href="#submenu-electric">ไฟฟ้า</a></li>
-                <li><a href="#submenu-plumbing">ประปา</a></li>
-                <li><a href="#submenu-wall">ผนัง</a></li>
-                <li><a href="#submenu-ceiling">ฝาเพดาน</a></li>
-                <li><a href="#submenu-painting">หลังค่ากันสาด</a></li>
-            </ul>
-        </section>
-        <!-- เพิ่มส่วนอื่น ๆ ในหน้าเว็บตามที่ต้องการ -->
+    <main class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">เมนูซ่อม</h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ไฟฟ้า</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ประปา</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ผนัง</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ฝาเพดาน</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">หลังค่ากันสาด</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            M.AutoInit(); // เริ่มต้น Materialize
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
