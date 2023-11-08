@@ -5,53 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แอปพลิเคชันช่าง</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>แอปพลิเคชันช่าง</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#menu-repair">ซ่อม</a></li>
-            <li><a href="#menu-install">ติดตั้ง</a></li>
-            <li><a href="#menu-renovate">ต่อเติม</a></li>
-        </ul>
-    </nav>
-    <main class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">เมนูซ่อม</h2>
-                <div class="card-deck">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ไฟฟ้า</h5>
-                        </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ซ่อม</h5>
+                        <p class="card-text">เลือกเมนูสำหรับการซ่อม</p>
+                        <a href="#menu-repair" class="btn btn-primary">ไปยังเมนู</a>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ประปา</h5>
-                        </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ติดตั้ง</h5>
+                        <p class="card-text">เลือกเมนูสำหรับการติดตั้ง</p>
+                        <a href="#menu-install" class="btn btn-primary">ไปยังเมนู</a>
                     </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ผนัง</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">ฝาเพดาน</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">หลังค่ากันสาด</h5>
-                        </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ต่อเติม</h5>
+                        <p class="card-text">เลือกเมนูสำหรับการต่อเติม</p>
+                        <a href="#menu-renovate" class="btn btn-primary">ไปยังเมนู</a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
