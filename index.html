@@ -32,7 +32,7 @@
                     <div class="card-body">
                         <h5 class="card-title">ซ่อม</h5>
                         <p class="card-text">เลือกเมนูสำหรับการซ่อม</p>
-                        <a href="#menu-repair" class="btn btn-primary">ไปยังเมนู</a>
+                        <a data-toggle="collapse" href="#menu-repair-submenu" class="btn btn-primary">แสดงเมนูย่อย</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <h5 class="card-title">ติดตั้ง</h5>
                         <p class="card-text">เลือกเมนูสำหรับการติดตั้ง</p>
-                        <a href="#menu-install" class="btn btn-primary">ไปยังเมนู</a>
+                        <a data-toggle="collapse" href="#menu-install-submenu" class="btn btn-primary">แสดงเมนูย่อย</a>
                     </div>
                 </div>
             </div>
@@ -50,12 +50,53 @@
                     <div class="card-body">
                         <h5 class="card-title">ต่อเติม</h5>
                         <p class="card-text">เลือกเมนูสำหรับการต่อเติม</p>
-                        <a href="#menu-renovate" class="btn btn-primary">ไปยังเมนู</a>
+                        <a data-toggle="collapse" href="#menu-renovate-submenu" class="btn btn-primary">แสดงเมนูย่อย</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="collapse" id="menu-repair-submenu">
+                    <div class="card card-body">
+                        <ul>
+                            <li>ไฟฟ้า</li>
+                            <li>ประปา</li>
+                            <li>ผนัง</li>
+                            <li>ฝาเพดาน</li>
+                            <li>หลังค่ากันสาด</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="menu-install-submenu">
+                    <div class="card card-body">
+                        <ul>
+                            <li>ไฟฟ้า</li>
+                            <li>ประปา</li>
+                            <li>ผนัง</li>
+                            <li>ฝาเพดาน</li>
+                            <li>หลังค่ากันสาด</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="menu-renovate-submenu">
+                    <div class="card card-body">
+                        <ul>
+                            <li>ไฟฟ้า</li>
+                            <li>ประปา</li>
+                            <li>ผนัง</li>
+                            <li>ฝาเพดาน</li>
+                            <li>หลังค่ากันสาด</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
